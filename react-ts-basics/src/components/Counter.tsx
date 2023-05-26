@@ -1,11 +1,11 @@
 import { ReactNode } from "react"
 
-type Counter = {
+type CounterProps = {
     setCount: React.Dispatch<React.SetStateAction<number>>,
     children: ReactNode
 }
 
-const Counter = ({children, setCount}: Counter) => {
+const Counter = ({children, setCount}: CounterProps) => {
   return (
     <>
         <div>{children}</div>
